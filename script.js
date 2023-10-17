@@ -31,12 +31,14 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
+function rot13(str) {
   let decodedArr = []; // Your Result goes here
+	
   // Only change code below this line
-	for(let of in lookup){
+	for (let i = 0; i < str.length; i++) {
 
-		decodedArr.push(i);
+		  decodedArr.push(lookup[str[i]]);
+		
 	}
 
   return decodedArr; //return decodedArr
